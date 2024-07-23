@@ -142,29 +142,31 @@
                 <div class="col-lg-7">
                     <!-- <p class="text-center mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p> -->
                     <div class="wow fadeIn" data-wow-delay="0.3s">
-                        <form>
+                        <form action="#">
+                            <!-- <form action="http://localhost:3000/contact" method="POST"> -->
+                                <!-- <form action="/contact" method="POST"> -->
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
                                         <label for="name">Your Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <input type="email" class="form-control" id="email" name="email"placeholder="Your Email">
                                         <label for="email">Your Email</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
                                         <label for="subject">Subject</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 150px"></textarea>
                                         <label for="message">Message</label>
                                     </div>
                                 </div>
@@ -235,8 +237,8 @@
                     <h5 class="text-white mb-4">Popular Link</h5>
                     <a class="btn btn-link" href="about.html">About Us</a>
                     <a class="btn btn-link" href="contact.html">Contact Us</a>
-                    <a class="btn btn-link" href="">Privacy Policy</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <!-- <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a> -->
                     <!-- <a class="btn btn-link" href="">Career</a> -->
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
@@ -260,10 +262,10 @@
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Cookies</a>
-                            <a href="">Help</a>
-                            <a href="">FAQs</a>
+                            <a href="index.html">Home</a>
+                            <!-- <a href="">Cookies</a> -->
+                            <a href="contact.html">Help</a>
+                            <!-- <a href="">FAQs</a> -->
                         </div>
                     </div>
                 </div>
@@ -288,6 +290,13 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- email -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/script.js"></script>
 </body>
+
 
 </html>
